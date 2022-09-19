@@ -1,0 +1,22 @@
+
+<div class="container my-5"> 
+    <h1 class="mb-3"></h1>
+    <table class="table"> 
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr *ngFor="let m of menus"> 
+                 <td>{{m.menuID}}</td> 
+                 <td>{{m.name}}</td>
+                 <td><a  [routerLink]="['/landingPage/'+m.menuID]">Order</a></td>
+                 
+                 </tr> 
+        <!-- </tbody> -->
+    </table>
+  </div>
+  <router-outlet></router-outlet>

@@ -1,0 +1,9 @@
+<form 
+    class="card-body" #userform="ngForm" (submit)="sub() ">
+    <input class="form-control" type="text" placeholder="Name"
+              name="name" [(ngModel)]="displays.name"> 
+              <button class="btn btn-primary btn-block confirm-button"  type="submit">Confirm</button>
+
+</form>
+{{displays.name}}
+
